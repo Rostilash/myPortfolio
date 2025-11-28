@@ -26,6 +26,10 @@ export const translations = {
       aboutP: "Про проект:",
       toolsIUse: "Інструменти які я використовував:",
       projects: {
+        Monopoly: {
+          aboutProject:
+            "Власник гри може розпочати гру, і всі опиняться на ігровому полі — гарно оформленому з прозорими клітинками, прапорцями та значками. У центрі є кнопка «Кидок». Під час кидання ви бачитимете кумедну анімацію гравців, переміщаючись по дошці. Ви можете купити її або пропустити. Клітина змінює колір після покупки, і ви навіть можете створити комбо з «Монополії»!",
+        },
         WeatherApp: { aboutProject: "Ви можете побачити прогноз на сьогодні. Сучасний дизайн з гарним" },
         Echat: {
           aboutProject:
@@ -80,6 +84,10 @@ export const translations = {
       aboutP: "About project:",
       toolsIUse: "Tools i use:",
       projects: {
+        Monopoly: {
+          aboutProject:
+            "🎮The game owner can start the game, and everyone will be taken to the game board — beautifully designed with clear cells, flags, and icons. In the center, there’s a Roll button. When you roll, you’ll see fun player animations as you move around the board. You can choose to buy it or skip. The cell changes color when it’s purchased, and you might even create a Monopoly combo!📱",
+        },
         WeatherApp: { aboutProject: "You can see forecast for today. Modern design with good" },
         Echat: {
           aboutProject:

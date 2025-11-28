@@ -18,7 +18,7 @@ html.dark {
   --color-text-primary: #dddada;
   --color-text-btn: #ffffff;
   --color-btn-active: #4b5563;
-  --color-btn-hover: #24eedd23;
+  --color-btn-hover: #00ffea23;
   --color-text-gray: #9d9fa3;
 }
 
@@ -49,7 +49,7 @@ h3 {
 }
 
 .title-h1 {
-  @apply text-4xl md:text-6xl font-semibold mb-4;
+  @apply text-3xl md:text-6xl font-semibold mb-4;
   line-height: 1.3;
 }
 

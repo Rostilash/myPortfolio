@@ -54,28 +54,32 @@ export const ProjectsList = () => {
                 </AnimationForGroup>
 
                 <AnimationForGroup variant="slideUp" className="flex justify-around">
-                  <Button
-                    variant="contained"
-                    className="btn-primary-xs"
-                    component="a"
-                    href={project.gitHub}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    startIcon={<GitHubIcon />}
-                  >
-                    GitHub
-                  </Button>
-                  <Button
-                    variant="contained"
-                    className="btn-primary-xs"
-                    component="a"
-                    href={project.liveAddress}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    startIcon={<img src={project.icon} alt={project.icon} className="absolute top-1 left-2 w-6 h-6 md:w-8 md:h-8 rounded-full" />}
-                  >
-                    Live
-                  </Button>
+                  {project.gitHub && (
+                    <Button
+                      variant="contained"
+                      className="btn-primary-xs"
+                      component="a"
+                      href={project.gitHub}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      startIcon={<GitHubIcon />}
+                    >
+                      GitHub
+                    </Button>
+                  )}
+                  {project.icon && (
+                    <Button
+                      variant="contained"
+                      className="btn-primary-xs"
+                      component="a"
+                      href={project.liveAddress}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      startIcon={<img src={project.icon} alt={project.icon} className="absolute top-1 left-2 w-6 h-6 md:w-8 md:h-8 rounded-full" />}
+                    >
+                      Live
+                    </Button>
+                  )}
                 </AnimationForGroup>
               </div>
             </div>

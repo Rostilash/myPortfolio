@@ -17,10 +17,24 @@ export const Footer = () => {
       <div className="flex items-center justify-between w-full pb-8">
         <div>© 2025 Lashyn Rostislav. All rights reserved.</div>
         <div>
-          <Button className="active" startIcon={<GitHubIcon />}>
+          <Button
+            className="text-white"
+            startIcon={<GitHubIcon />}
+            component="a"
+            href="https://github.com/Rostilash"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             GitHub
           </Button>
-          <Button className="active" startIcon={<LinkedInIcon />}>
+          <Button
+            className="text-white"
+            startIcon={<LinkedInIcon />}
+            component="a"
+            href="https://www.linkedin.com/in/rostislav-lashyn/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             LinkedIn
           </Button>
         </div>
