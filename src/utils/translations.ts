@@ -1,6 +1,12 @@
 export const translations = {
   uk: {
-    h: { home: "Додому", about: "Про мене", contacts: "Контакти", my_works: "Мої Роботи", greeting: "Привіт!" },
+    h: {
+      home: "Додому",
+      about: "Про мене",
+      contacts: "Контакти",
+      my_works: "Мої Роботи",
+      greeting: "Привіт!",
+    },
     home: {
       name: "Лашин Ростислав",
       greeting: "Вітаю! Мене звати",
@@ -30,7 +36,13 @@ export const translations = {
           aboutProject:
             "Власник гри може розпочати гру, і всі опиняться на ігровому полі — гарно оформленому з прозорими клітинками, прапорцями та значками. У центрі є кнопка «Кидок». Під час кидання ви бачитимете кумедну анімацію гравців, переміщаючись по дошці. Ви можете купити її або пропустити. Клітина змінює колір після покупки, і ви навіть можете створити комбо з «Монополії»!",
         },
-        WeatherApp: { aboutProject: "Ви можете побачити прогноз на сьогодні. Сучасний дизайн з гарним" },
+        GEN: {
+          aboutProject:
+            "Адаптивний дизайн з підключеним API для пошуку міст в Україні, підключена бібліотека Leaflet для роботи з картами. Сайт включає перегляд подій на карті, а також додавання подій до неї, лайкування, зберігання, спілкування з людьми. Також робота з датами за допомогою dayjs. Використовується новий підхід до використання інструментарію Redux та маршрутів у ньому. А також працював над архітектурними рішеннями для вирішення проблем.",
+        },
+        WeatherApp: {
+          aboutProject: "Ви можете побачити прогноз на сьогодні. Сучасний дизайн з гарним",
+        },
         Echat: {
           aboutProject:
             "Ви можете робити публікації, Rest-Api (новини, найкращі місця, фільми), ви можете надсилати повідомлення іншому користувачеві, профіль, авторизація користувача, ігри (хрестики-нулики, монополія) оновлення стану в режимі реального часу.",
@@ -50,16 +62,28 @@ export const translations = {
       headH4: "Щоб зв'язатися зі мною",
       description:
         "Готові разом створити щось грандіозне? Якщо у вас є потенційна можливість, проект або посада на повний робочий день, яку ви хотіли б обговорити, будь ласка, зв'яжіться зі мною, використовуючи форму нижче.",
+
+      // Form info
       name: "Ім'я",
       placeHName: "Введіть своє ім'я",
       Email: "Email",
       placeHEmail: "Введіть своє Email",
       placeHTextArea: "Введіть своє повідомлення",
       formBtn: "Надіслати",
+
+      // Success message
+      sendedMSG: "Повідомлення надіслано!",
+      feedbackMSG: "Я звʼяжусь з вами якнайшвидше 😊",
     },
   },
   en: {
-    h: { home: "Home", about: "About me", contacts: "Contacts", my_works: "My Works", greeting: "Hello!" },
+    h: {
+      home: "Home",
+      about: "About me",
+      contacts: "Contacts",
+      my_works: "My Works",
+      greeting: "Hello!",
+    },
     home: {
       name: "Rostislav Lashyn",
       greeting: "Hi! I'm",
@@ -80,13 +104,18 @@ export const translations = {
     my_works: {
       headH2: "My latest work",
       headH4: "My portfolio",
-      description: "Welcome to my web development portfolio! Explore a collection of my projects showcasing my expertise in frontend development.",
+      description:
+        "Welcome to my web development portfolio! Explore a collection of my projects showcasing my expertise in frontend development.",
       aboutP: "About project:",
       toolsIUse: "Tools i use:",
       projects: {
         Monopoly: {
           aboutProject:
             "🎮The game owner can start the game, and everyone will be taken to the game board — beautifully designed with clear cells, flags, and icons. In the center, there’s a Roll button. When you roll, you’ll see fun player animations as you move around the board. You can choose to buy it or skip. The cell changes color when it’s purchased, and you might even create a Monopoly combo!📱",
+        },
+        GEN: {
+          aboutProject:
+            "Adaptive design with connected API for searching city in Ukraine, connected Leaflet library for working with maps. The site includes viewing events on the map, as well as adding events to it, liking, storing, communicating with people. Also working with dates using dayjs. Use a new approach for using Redux toolkit, and routes in it. And worked on architectural solutions to solve problems.",
         },
         WeatherApp: { aboutProject: "You can see forecast for today. Modern design with good" },
         Echat: {
@@ -108,12 +137,18 @@ export const translations = {
       headH4: "Get in touch",
       description:
         "Ready to build something great together? If you have a potential opportunity, project, or full-time position you'd like to discuss, please reach out using the form below.",
+
+      // Form info
       name: "Name",
       placeHName: "Please enter your name",
       Email: "Email",
       placeHEmail: "Please enter your Email",
       placeHTextArea: "Please enter your message",
       formBtn: "SEND",
+
+      // Success message
+      sendedMSG: "Message sended!",
+      feedbackMSG: "I will text you back as quick as possible 😊!",
     },
   },
 };

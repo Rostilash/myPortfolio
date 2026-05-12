@@ -19,7 +19,7 @@ export const Animate = ({ children, variant = "fadeIn", duration = 1, className 
       initial="hidden"
       // When once true it will be happened 1 time
       whileInView="visible"
-      viewport={{ once: false, amount: 0.3, margin: "0% 0px -20% 0px" }}
+      viewport={{ once: false, amount: 0.3, margin: "0% 0px -10% 0px" }}
       transition={{ duration, ease: "easeOut" }}
     >
       {children}

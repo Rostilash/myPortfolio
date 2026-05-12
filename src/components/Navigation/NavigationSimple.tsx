@@ -18,7 +18,13 @@ export const NavigationSimple = () => {
     <nav className="space-x-4 font-light custom-text py-2 px-4 hidden md:block">
       {/* Links from react-scroll */}
       {links.map((link) => (
-        <Link key={link.name} to={link.name} smooth={true} duration={link.duration} className="cursor-pointer hover:text-blue-300 text-xl">
+        <Link
+          key={link.name}
+          to={link.name}
+          smooth={true}
+          duration={link.duration}
+          className="cursor-pointer hover:text-blue-300 text-xl"
+        >
           {link.value}
         </Link>
       ))}

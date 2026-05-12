@@ -69,16 +69,22 @@ export const ContactForm = () => {
         <Animate variant="popIn" className="flex-center py-4">
           <TextareaAutosize
             name="message"
-            minRows={8}
+            minRows={6}
             aria-label="minimum height"
             placeholder={t.contacts.placeHTextArea}
-            className="border p-4 w-xs md:w-[650px] flex justify-center"
+            className="border p-4 w-full md:w-[650px] flex justify-center"
             required
           />
         </Animate>
 
-        <Animate variant="popIn" className="flex justify-center">
-          <Button type="submit" variant="contained" className="btn-primary w-40" rel="noopener noreferrer" endIcon={<ArrowForwardIcon />}>
+        <Animate className="flex justify-center">
+          <Button
+            type="submit"
+            variant="contained"
+            className="btn-primary w-40"
+            rel="noopener noreferrer"
+            endIcon={<ArrowForwardIcon />}
+          >
             {t.contacts.formBtn}
           </Button>
         </Animate>

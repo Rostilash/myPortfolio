@@ -5,7 +5,10 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 export const Footer = () => {
   return (
-    <footer className="bg-primary custom-text flex-center flex-col gap-4 px-[18%]" id="footer">
+    <footer
+      className="bg-primary custom-text flex-center flex-col gap-2 px-4 sm:px-[18%]"
+      id="footer"
+    >
       <LogoSmall />
       <div>
         <EmailIcon /> acrossfear2022@gmail.com
