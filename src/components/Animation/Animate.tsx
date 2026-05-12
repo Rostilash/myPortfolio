@@ -9,7 +9,12 @@ interface AnimateProps {
   className?: string;
 }
 
-export const Animate = ({ children, variant = "fadeIn", duration = 1, className }: AnimateProps) => {
+export const Animate = ({
+  children,
+  variant = "fadeIn",
+  duration = 0.5,
+  className,
+}: AnimateProps) => {
   const selected: Variants = animations[variant] ?? animations.fadeIn;
 
   return (

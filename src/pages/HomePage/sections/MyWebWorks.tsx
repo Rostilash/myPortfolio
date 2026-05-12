@@ -7,9 +7,7 @@ export const MyWebWorks = () => {
   const t = useTranslation();
 
   return (
-    <section className="w-full  px-[5%] md:px-[12%] py-10 scroll-mt-20" id="my_works">
-      <ScrollToTopBtn />
-
+    <section className="w-full px-[5%] md:px-[12%] py-0 md:py-10" id="my_works">
       <SectionTitleContent
         h4={t.my_works.headH4}
         h2={t.my_works.headH2}
@@ -17,6 +15,8 @@ export const MyWebWorks = () => {
       />
 
       <ProjectsList />
+
+      <ScrollToTopBtn />
 
       {/* --- Carousel --- */}
       {/* <CarouselAutoPlay /> */}

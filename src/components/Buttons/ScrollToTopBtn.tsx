@@ -32,7 +32,7 @@ export const ScrollToTopBtn = () => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.9 }}
             transition={{ duration: 0.25 }}
-            className="fixed bottom-6 right-6 hover:scale-110  hover:text-blue-300"
+            className="fixed bottom-6 right-6 hover:scale-110  hover:text-blue-300 z-100"
           >
             <Link
               to="home"

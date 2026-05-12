@@ -8,7 +8,7 @@ export const translations = {
       greeting: "Привіт!",
     },
     home: {
-      name: "Лашин Ростислав",
+      fio: "Лашин Ростислав",
       greeting: "Вітаю! Мене звати",
       knowledge: "Frontend developer",
       from: "Ужгород / Україна",
@@ -85,7 +85,7 @@ export const translations = {
       greeting: "Hello!",
     },
     home: {
-      name: "Rostislav Lashyn",
+      fio: "Rostislav Lashyn",
       greeting: "Hi! I'm",
       knowledge: "Frontend developer",
       from: "based in Uzhgorod, Ukraine",

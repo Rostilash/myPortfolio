@@ -6,7 +6,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 export const Footer = () => {
   return (
     <footer
-      className="bg-primary custom-text flex-center flex-col gap-2 px-4 sm:px-[18%]"
+      className="bg-primary custom-text flex-center flex-col gap-2 px-[5%] sm:px-[18%]"
       id="footer"
     >
       <LogoSmall />
@@ -14,10 +14,7 @@ export const Footer = () => {
         <EmailIcon /> acrossfear2022@gmail.com
       </div>
 
-      {/* divider */}
-      <span className="border-b w-full border-gray-400 mt-10"></span>
-
-      <div className="flex items-center justify-between w-full pb-8">
+      <div className="flex items-center justify-between w-full pb-8 border-t border-gray-400">
         <div>© 2025 Lashyn Rostislav. All rights reserved.</div>
         <div>
           <Button

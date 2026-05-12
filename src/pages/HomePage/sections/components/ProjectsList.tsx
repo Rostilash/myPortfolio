@@ -39,16 +39,18 @@ export const ProjectsList = () => {
         let translation = t.my_works.projects?.[project.name as keyof typeof t.my_works.projects];
         return (
           <AnimateGroup
-            stagger={0.1}
+            stagger={0.02}
             className="flex flex-col gap-4 mb-10 md:mb-50 overflow-hidden"
             key={project.id}
           >
+            {/* Top divider */}
             <AnimationForGroup variant="slideUp" className="flex-center w-full mb-4 ">
               <span className="h-px bg-gray-200 w-100"></span>
               <h4 className="title-h4 shrink-0 px-10"> {project.name}</h4>
               <span className="h-px bg-gray-200 w-100"></span>
             </AnimationForGroup>
 
+            {/* Product main image */}
             <div className="flex justify-c flex-col md:flex-row w-full">
               <div className="grid grid-cols-3 w-full md:max-w-[600px] mb-10">
                 {positions.map((pos, i) => (
@@ -66,6 +68,7 @@ export const ProjectsList = () => {
                 ))}
               </div>
 
+              {/* Right side with information */}
               <div className="flex flex-col space-y-4 px-4 pb-10 md:w-xl">
                 <AnimationForGroup variant="slideLeft">
                   <p> {t.my_works.aboutP} </p>

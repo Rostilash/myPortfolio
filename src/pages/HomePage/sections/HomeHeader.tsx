@@ -12,31 +12,29 @@ export const HomeHeader = () => {
 
   return (
     <section
-      className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4"
+      className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-1 md:gap-4"
       id="home"
     >
-      <MyImage name={t.home.name} />
+      <MyImage name={t.home.fio} />
 
       <HomeContent />
 
-      <div className="flex gap-4">
-        <Animate variant="slideUp" duration={1.4}>
-          <Button
-            component={Link}
-            to="contacts"
-            smooth={true}
-            duration={1000}
-            variant="contained"
-            endIcon={<SendIcon />}
-            className="btn-primary"
-          >
-            {t.home.contact_me}
-          </Button>
-        </Animate>
+      <Animate variant="slideUp" duration={1.4} className="flex gap-4">
+        <Button
+          component={Link}
+          to="contacts"
+          smooth={true}
+          duration={1000}
+          variant="contained"
+          endIcon={<SendIcon />}
+          className="btn-primary"
+        >
+          {t.home.contact_me}
+        </Button>
 
         {/* Added props for reuse component if needed */}
         <LoadResume name={t.home.resume} href="LashynRostislavCV.pdf" />
-      </div>
+      </Animate>
     </section>
   );
 };

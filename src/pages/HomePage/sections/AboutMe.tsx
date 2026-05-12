@@ -7,10 +7,10 @@ import { ToolsList } from "./components/ToolsList";
 export const AboutMe = () => {
   const t = useTranslation();
   return (
-    <section className="w-full h-full px-[12%] py-4 scroll-mt-20" id="about">
+    <section className="w-full h-full px-2 md:px-[12%] py-4 scroll-mt-20" id="about">
       <SectionTitleContent h4={t.aboutMe.headH4} h2={t.aboutMe.headH2} />
 
-      <div className="flex w-full flex-col justify-center lg:flex-row items-center gap-20 my-10 max-w-6xl mx-auto">
+      <div className="flex w-full flex-col justify-center lg:flex-row items-center gap-4 md:gap-20 my-10 max-w-6xl mx-auto">
         <AboutImage />
 
         <Animate variant="slideUp" className="space-y-6">
